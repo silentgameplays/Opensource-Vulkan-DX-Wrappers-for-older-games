@@ -23,10 +23,7 @@ For DirectX 11 games:
 copy d3d11.dll, dxgi.dll and wined3d.dll in the game's executable directory
 
 For DirectX<=7 games:
-Getting these games to work is a bit tricky.
--copy ddraw.dll and wined3d.dll in the game's executable directory
--rename ddraw.dll, but make sure the file name is still 5 characters long (for instance ddfuk.dll)
--use an hex editor (for instance HxD) to replace all references to ddraw.dll with ddfuk.dll (or whatever you renamed the dll to). You will have to do this for all .exe, .dll (except our dlls), .ren, ... files (anything that may contain code)
+copy ddraw.dll and wined3d.dll in the game's executable directory
 
 Warning:
 Do NOT copy any of these files into Windows\System32, Windows\SysWoW64 or any path included in the PATH environment variable or Windows will no longer work!
